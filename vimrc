@@ -13,6 +13,9 @@ Bundle 'gmarik/vundle'
 " original repos on github
 " Bundle 'majutsushi/tagbar'
 " Bundle 'altercation/vim-colors-solarized'
+Bundle 'https://github.com/scrooloose/nerdtree'
+Bundle 'https://github.com/majutsushi/tagbar'
+Bundle 'https://github.com/vim-scripts/taglist.vim'
 
 " Github repos of the user 'vim-scripts'
 " => can omit the username part

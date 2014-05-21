@@ -46,3 +46,6 @@ au BufWinLeave *.* silent mkview
 au BufEnter * lcd %:p:h
 set fileencodings=utf-8,big5,latin-1
 "set enc=utf8
+"
+nmap <F8> :TagbarToggle<CR>
+nnoremap <silent> <F5> :NERDTreeToggle<CR>

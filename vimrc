@@ -32,7 +32,12 @@ syntax on
 set exrc
 set nu
 set nobackup
-set ts=4 sw=4
+"set expandtab
+set tabstop=4 shiftwidth=4
+set incsearch
+set hlsearch
+set linebreak
+"set softtabstop=4 shiftwidth=4
 map <C-J> <C-W><C-W><C-W>_
 map <C-K> <C-W><C-K><C-W>_
 set wmh=0
@@ -41,10 +46,11 @@ set foldmarker=[[[,]]]
 "colorscheme torte
 "set viewdir=$HOME/.vim/view
 "au BufNewFile,BufRead *.tpl setf smarty
-au BufWinEnter *.* silent loadview
-au BufWinLeave *.* silent mkview
+"au BufWinEnter *.* silent loadview
+"au BufWinLeave *.* silent mkview
 au BufEnter * lcd %:p:h
 set fileencodings=utf-8,big5,latin-1
+set ffs=unix,dos ff=unix
 "set enc=utf8
 "
 nmap <F8> :TagbarToggle<CR>

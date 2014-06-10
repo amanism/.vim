@@ -16,6 +16,8 @@ Bundle 'gmarik/vundle'
 Bundle 'https://github.com/scrooloose/nerdtree'
 Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'https://github.com/vim-scripts/taglist.vim'
+Bundle 'https://github.com/twerth/ir_black'
+
 " Bundle 'https://github.com/vim-scripts/ShowMarks'
 " Bundle 'https://github.com/vim-scripts/Visual-Mark'
 
@@ -42,11 +44,12 @@ highlight ShowMarksHLm ctermfg=white ctermbg=darkblue
 filetype plugin indent on     " required!
 
 " syntax enable
+set t_Co=256
 syntax on
 set exrc
 set nu
 set nobackup
-"set expandtab
+set expandtab
 set tabstop=4 shiftwidth=4
 set incsearch
 set hlsearch
@@ -66,11 +69,20 @@ set wmh=0
 set foldmethod=indent
 set foldmarker=[[[,]]]
 
-hi Comment ctermfg=gray
-hi Folded ctermbg=black
-hi Folded ctermfg=cyan
-"colorscheme torte
-"colorscheme darkblue
+
+" colorscheme ir_black
+" colorscheme ir_dark
+" colorscheme ir_blue
+" colorscheme default
+" colorscheme torte
+" colorscheme darkblue
+
+colorscheme desert
+hi LineNr ctermfg=darkgray
+" hi Comment ctermfg=cyan
+" hi Folded ctermbg=black
+" hi Folded ctermfg=gray
+
 "set viewdir=$HOME/.vim/view
 "au BufNewFile,BufRead *.tpl setf smarty
 "au BufWinEnter *.* silent loadview

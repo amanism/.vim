@@ -13,10 +13,10 @@ Bundle 'gmarik/vundle'
 " original repos on github
 " Bundle 'majutsushi/tagbar'
 " Bundle 'altercation/vim-colors-solarized'
+"Bundle 'https://github.com/twerth/ir_black'
 Bundle 'https://github.com/scrooloose/nerdtree'
 Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'https://github.com/vim-scripts/taglist.vim'
-Bundle 'https://github.com/twerth/ir_black'
 
 " Bundle 'https://github.com/vim-scripts/ShowMarks'
 " Bundle 'https://github.com/vim-scripts/Visual-Mark'
@@ -31,17 +31,19 @@ Bundle 'https://github.com/twerth/ir_black'
 " ...
 let NERDTreeWinSize = 26
 
-highlight ShowMarksHLl ctermfg=white ctermbg=darkblue
-highlight ShowMarksHLu ctermfg=white ctermbg=darkblue
-highlight ShowMarksHLo ctermfg=white ctermbg=darkblue
-highlight ShowMarksHLm ctermfg=white ctermbg=darkblue
+" highlight ShowMarksHLl ctermfg=white ctermbg=darkblue
+" highlight ShowMarksHLu ctermfg=white ctermbg=darkblue
+" highlight ShowMarksHLo ctermfg=white ctermbg=darkblue
+" highlight ShowMarksHLm ctermfg=white ctermbg=darkblue
 
 "  - ShowMarksHLl : This group is used to highlight all the lowercase marks.
 "  - ShowMarksHLu : This group is used to highlight all the uppercase marks.
 "  - ShowMarksHLo : This group is used to highlight all other marks.
 "  - ShowMarksHLm : This group is used when multiple marks are on the same line.
 
-filetype plugin indent on     " required!
+" filetype plugin indent on     " required!
+filetype plugin on     " required!
+filetype indent on     " required!
 
 " syntax enable
 set t_Co=256
@@ -69,7 +71,6 @@ set wmh=0
 set foldmethod=indent
 set foldmarker=[[[,]]]
 
-
 " colorscheme ir_black
 " colorscheme ir_dark
 " colorscheme ir_blue
@@ -79,9 +80,9 @@ set foldmarker=[[[,]]]
 
 colorscheme desert
 hi LineNr ctermfg=darkgray
-" hi Comment ctermfg=cyan
+hi Comment ctermfg=darkgray
+hi Folded ctermfg=white
 " hi Folded ctermbg=black
-" hi Folded ctermfg=gray
 
 "set viewdir=$HOME/.vim/view
 "au BufNewFile,BufRead *.tpl setf smarty
